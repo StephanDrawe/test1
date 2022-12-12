@@ -1,5 +1,5 @@
 
-mapboxgl.accessToken = 'pk.eyJ1Ijoic2RyYXdlIiwiYSI6ImNsYmZsbXB0YTA3ZHgzdmxhYXl4Z2c4N3QifQ.rw99q1mMjaB2nLBBOY1Fmw';
+mapboxgl.accessToken = /*add your own default public token here*/;
     
 var map = new mapboxgl.Map({
     container: 'map',
