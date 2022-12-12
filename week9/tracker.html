@@ -15,29 +15,32 @@
             left: 0;
             padding: 10px;
          }
+         button {
+            font-size: 2em;
+         }
     </style>
 </head>
 <body>
     <div id="map"></div>
     <div class="map-overlay top">
-    <button style="font-size: 2em;" onclick="move()">
+    <button onclick="move()">
     Track
     </button>
 </div>
 
     <script>
-        
+
     mapboxgl.accessToken = 'pk.eyJ1Ijoic2RyYXdlIiwiYSI6ImNsYmZsbXB0YTA3ZHgzdmxhYXl4Z2c4N3QifQ.rw99q1mMjaB2nLBBOY1Fmw';
     
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v11',
-            center: [-71.104081, 42.365554],
-            zoom: 13
+            center: [-73.984016, 40.754932],
+            zoom: 11
         });
     
         var marker = new mapboxgl.Marker()
-        .setLngLat([-71.092761, 42.357575])
+        .setLngLat([, ])
         .addTo(map);
     
         const busStops = [
