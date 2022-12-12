@@ -45,5 +45,5 @@ function move(){
     marker.setLngLat(stops[counter]);
     counter++;
     move();
-    }, 1000);
+    }, 3000);
 }
