@@ -1,0 +1,33 @@
+
+body{
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+#navBar{
+    background-color: bisque;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 0px 0 0px;
+    align-items: center;
+}
+
+.sections{
+    height: 500px;
+}
+
+#aboutMe{
+    background-color: beige;
+}
+
+#projects{
+    background-color: blanchedalmond;
+}
+#resume{
+    background-color: cornsilk;
+}
