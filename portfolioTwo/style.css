@@ -16,7 +16,9 @@ body{
 
 #projects{
     background-color: beige;
+    display: grid;
 }
 #contact{
     background-color: blueviolet;
+    display: grid;
 }
