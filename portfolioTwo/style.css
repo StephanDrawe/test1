@@ -1,0 +1,22 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+.sections{
+    height: 400px;
+}
+#aboutMe{
+    background-color: aqua;
+    display: grid;
+}
+
+#projects{
+    background-color: beige;
+}
+#contact{
+    background-color: blueviolet;
+}
