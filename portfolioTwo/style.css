@@ -8,17 +8,15 @@ body{
 
 .sections{
     height: 500px;
+    background-color: white;
 }
 #aboutMe{
-    background-color: aqua;
     display: grid;
 }
 
 #projects{
-    background-color: beige;
     display: grid;
 }
 #contact{
-    background-color: blueviolet;
     display: grid;
 }
