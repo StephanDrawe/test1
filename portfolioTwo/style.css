@@ -12,6 +12,7 @@ body{
 }
 #aboutMe{
     display: grid;
+    height: 600px;
 }
 
 #projects{
@@ -20,4 +21,5 @@ body{
 }
 #contact{
     display: default;
+    height: 550px;
 }
