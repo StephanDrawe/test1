@@ -8,8 +8,9 @@
     padding: 50px;
     text-align: center;
     font-size: 2em;
-    border-style: dashed;
+    border-style: none;
     height: 425px;
+    width: 850px;
 }
 #picture{
     padding: 50px;
