@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #textBox{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" id="show">Click to Show</a>
+    |
+    <a href="#" id="hide">Click to Hide</a>
+
+    <div id="textBox">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("#show").on("click", function(){
+                $("#textBox").show();
+            });
+            $("#hide").on("click", function(){
+                $("#textBox").hide();
+            });
+        });
+    </script>
+</body>
+</html>
