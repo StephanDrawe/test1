@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #textBox{
-            display: none;
-        }
     </style>
 </head>
 <body>
-    <a href="#" id="fade-in">Faide In</a>
+    <a href="#" id="slideUp">Slide Up</a>
     |
-    <a href="#" id="fade-out">Fade Out</a>
+    <a href="#" id="slideDown">Slide Down</a>
+    |
+    <a href="#" id="toggleSlide">Toggle</a>
     <div id="textBox">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -24,18 +23,17 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script>
         $("document").ready(function(){
-            $("#fade-in").on("click", function(){
-                $("#textBox").fadeIn(3000, function(){
-                    alert("I'm Done Fading In");
+            $("#slideUp").click(function(){
+                $("#textBox").slideUp("2000", "linear");
+            });
+            $("#slideDown").click(function(){
+                $("#textBox").slideDown("2000", "linear");
+            });
+            $("#toggleSlide").click(function(){
+                $("#textBox").slideToggle("2000", function(){
+                    alert("Done");
                 });
             });
-            $("#fade-out").on("click", function(){
-                $("#textBox").fadeOut("fast", function(){
-                    alert("I'm Done Fading Out");
-                });
-            });
-
-
         });
     </script>
 </body>
