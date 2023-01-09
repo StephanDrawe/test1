@@ -9,11 +9,7 @@
     </style>
 </head>
 <body>
-    <a href="#" id="slideUp">Slide Up</a>
-    |
-    <a href="#" id="slideDown">Slide Down</a>
-    |
-    <a href="#" id="toggleSlide">Toggle</a>
+    <a href="#" id="toggleMe">Toggle</a>
     <div id="textBox">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -23,7 +19,7 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script>
         $("document").ready(function(){
-            $("toggleMe").click(function(){
+            $("#toggleMe").click(function(){
                 $("#textBox").toggle(4000, "swing");
             });
         });
