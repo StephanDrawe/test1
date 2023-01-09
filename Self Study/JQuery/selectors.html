@@ -16,31 +16,20 @@
     </style>
 </head>
 <body>
-    <a href="#" id="grow">Grow</a>
-    <a href="#" id="move">Move</a>
-    <a href="#" id="bigger">Bigger</a>
-    <a href="#" id="manyThings">Many Things</a>
-    <div id="textBox">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
+    <p id="headerTop">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  
+    <p class="greenBorder">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script>
         $("document").ready(function(){
-            $("#grow").click(function(){
-                $("#textBox").animate({width:"500px"}, 1000);
-            });
-            $("#move").click(function(){
-                $("#textBox").animate({marginLeft:"500px"}, 1000);
-            });
-            $("#bigger").click(function(){
-                $("#textBox").animate({fontSize:"25px"}, 2000);
-            });
-            $("#manyThings").click(function(){
-                $("#textBox").animate({marginLeft:"250px", fontSize:"30px", width:"600px"}, 1000);
-            });
+            $("p").css("border", "3px red dotted");
+            $("#headerTop").css("border", "1px blue solid");
+            $(".greenBorder").css("border", "2px green dashed");
         });
     </script>
 </body>
