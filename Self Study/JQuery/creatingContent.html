@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+
+    <a id="create" href="#">Create</a> 
+
+    <a id="createText" href="#">Create Text</a>  
+
+    <a id="createVariable" href="#">Create Text</a>     
+
+    <div id="container">
+        <p>1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <p>2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  
+        <p>3 Lorem ipsum dolor Hello sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("#createText").click(function(){
+                $("#container p:last").text("<p>Replaced and created this text</p>");
+            });
+
+            $("#createVariable").click(function(){
+                var newText = $('#container p:first');
+                $("#container p:last").html(newText);
+            });
+
+        });
+    </script>
+</body>
+</html>
