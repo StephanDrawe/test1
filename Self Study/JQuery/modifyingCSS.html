@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .colorBox{
-            color: aqua;
+        .color{
+            color: brown;
         }
     </style>
 </head>
 <body>
 
-    <a id="replaceAll" href="#">Replace All</a>  
-    <a id="replaceWith" href="#">Replace With</a>  
+    <a id="addClass" href="#">Add Class</a>  
+    <a id="removeClass" href="#">Remove Class</a>     
+    <a id="toggleClass" href="#">Toggle Class</a>  
+    <a id="increaseClass" href="#">Increase Class</a>  
 
     <div id="container">
         <p>1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -27,13 +29,17 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script>
         $("document").ready(function(){
-            $("#container p:first").wrap("<div class = 'colorBox'>");
-            $("#container p:last").empty();
-            $("#replaceAll").click(function(){
-                $("<div>container</div>").replaceAll("#container");
+            $("#addClass").click(function(){
+                $("p:first").addClass('color');
             });
-            $("#replaceWith").click(function(){
-                $("#container").replaceWith("<div>replaced!</div>");
+            $("#removeClass").click(function(){
+                $("p:first").removeClass('color');
+            });
+            $("#toggleClass").click(function(){
+                $("p:first").toggleClass('color');
+            });
+            $("#increaseClass").click(function(){
+                $("p:first").css("font-size", "+=5px");
             });
         });
     </script>
