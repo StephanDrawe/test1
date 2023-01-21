@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+      .my-row{
+        background-color: bisque;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col">Col One</div>
+            <div class="col">Col Two</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">Col Three</div>
+          <div class="col-sm-8">Col Four</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-2">Col Five</div>
+        <div class="col-sm-12 col-md-6 col-lg-8">Col Six</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 order-md-2">Col Seven</div>
+        <div class="col-sm-6 order-md-1">Col Eight</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 order-2">Col Nine</div>
+        <div class="col-sm-6 order-1">Col Ten</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 offset-2">Col Eleven</div>
+        <div class="col-sm-4 offset-1">Col Twelve</div>
+      </div>
+      <div class="row my-row justify-content-center align-items-center">
+        <div class="col-sm-4"><div class="p-3 border bg-light">Col Thirteen</div></div>
+        <div class="col-sm-4"><div class="p-3 border bg-light">Col Fourteen</div></div>
+      </div>
+      <div class="row my-row justify-content-center align-items-center gx-5">
+        <div class="col-sm-4"><div class="p-3 border bg-light">Col Fifteen</div></div>
+        <div class="col-sm-4"><div class="p-3 border bg-light">Col Sixteen</div></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
