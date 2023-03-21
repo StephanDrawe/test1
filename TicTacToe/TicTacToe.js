@@ -30,12 +30,18 @@ const Square = (props) => {
   const getColor = () => palet[toggle];
   return (
     <button onClick={(e) => {
+// if (filled) {return null;}
+// else {}
+
       let col = getColor();
       setColor(col);
       e.target.style.background = col;
       let nextPlayer = newState(id);
       setStatus(nextPlayer);
-    }}> 
+
+
+      }}
+    > 
       <h1>{xo[status]}</h1> 
     </button>
     
